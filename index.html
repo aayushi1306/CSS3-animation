@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Position</title>
+        <style>
+            .box{
+                width:200px;
+                height:200px;
+                background: blue;
+                margin: 70px auto;
+                animation-name: abc;
+                animation-duration: 1s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+            }
+            @keyframes abc{
+                0%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(360deg);
+                }
+            }
+            .box2{
+                width:200px;
+                height:200px;
+                background:aqua;
+                margin: 70px auto;
+                animation-name: abc2;
+                animation-duration: 1s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+            }
+            @keyframes abc2{
+                0%{
+                    transform: rotateZ(0deg);
+                }
+                100%{
+                    transform: rotateZ(360deg);
+                }
+            }
+            .box3{
+                width:200px;
+                height:200px;
+                background:brown;
+                animation-name: abc3;
+                animation-duration: 5s;
+                animation-timing-function:linear;
+                animation-direction: alternate;
+            }
+            @keyframes abc3{
+                0%{
+                    transform: translateX(0px);
+                }
+                25%{
+                    background: darkgoldenrod;
+                }
+                50%{
+                    background:forestgreen;
+                }
+                75%{
+                    background: indigo;
+                }
+                100%{
+                    transform:translateX(1300px);
+                }
+            }        
+            .box4{
+                width:200px;
+                height:200px;
+                background:cornflowerblue;
+                animation-name: abc4;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: 1;
+                animation-direction: alternate;
+            }
+            @keyframes abc4{
+                0%{
+                    transform:translateX(0px);
+                }
+                100%{
+                    transform:translateX(800px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>    
+        <div class="box2"></div>      
+        <div class="box3"></div>      
+        <div class="box4"></div>      
+    </body>
+</html>
